@@ -32,7 +32,7 @@ export const IntroWeb = () => {
 					<img
 						src={abejaSide}
 						width="2000"
-						sizes="(max-width: 479px) 92vw, (max-width: 767px)95vw,(max-width: 991px) 318.484375w"
+						sizes="(max-width: 479px) 92vw, (max-width: 767px)95vw, (max-width: 991px) 318.484375vw"
 						alt=""
 						className="hero-image"
 					/>
