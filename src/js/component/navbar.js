@@ -1,17 +1,28 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import logo from "../../img/logomiel.png";
 
 export const Navbar = () => {
 	return (
-		<nav className="navbar navbar-light bg-light mb-3">
-			<Link to="/">
-				<span className="navbar-brand mb-0 h1">React Boilerplate</span>
-			</Link>
-			<div className="ml-auto">
-				<Link to="/demo">
-					<button className="btn btn-primary">Check the Context in action</button>
-				</Link>
-			</div>
-		</nav>
+		<header id="nav" className="sticky-nav">
+			<nav className="container">
+				<ul role="list" className="nav-grid list-unstyled">
+					<li id="w-node-brand">
+						<a className="nav-logo-link">
+							<img src={logo} sizes="138" alt="" className="nav-logo" />
+						</a>
+					</li>
+					<li>
+						<a className="nav-link">Features</a>
+					</li>
+					<li>
+						<a className="nav-link">Pricing</a>
+					</li>
+					<li>
+						<a className="nav-link">Features</a>
+					</li>
+				</ul>
+			</nav>
+		</header>
 	);
 };
