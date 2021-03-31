@@ -22,8 +22,8 @@ export const IntroWeb = () => {
 								placeholder="Introduce tu nombre"
 								id="name"
 							/>
-							<button type="button" value="Aprender más">
-								className="button"
+							<button type="button" className="button">
+								Aprender más
 							</button>
 						</form>
 					</div>
