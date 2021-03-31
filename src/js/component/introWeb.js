@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import abejaSide from "../../img/malcolm-lightbody-NfDKLoNbXDk-unsplash.jpg";
 
 export const IntroWeb = () => {
 	return (
@@ -10,6 +11,31 @@ export const IntroWeb = () => {
 						¡Setenta mil especies de <strong className="bold-text">plantas</strong> son polinizadas por{" "}
 						<strong>abejas</strong>
 					</p>
+					<div className="form">
+						<form id="email-from" name="email-form" data-name="Email form">
+							<input
+								type="text"
+								className="input"
+								maxLength="256"
+								name="name"
+								data-name="Name"
+								placeholder="Introduce tu nombre"
+								id="name"
+							/>
+							<button type="button" value="Aprender más">
+								className="button"
+							</button>
+						</form>
+					</div>
+				</div>
+				<div className="hero-image-mask">
+					<img
+						src={abejaSide}
+						width="2000"
+						sizes="(max-width: 479px) 92vw, (max-width: 767px)95vw,(max-width: 991px) 318.484375w"
+						alt=""
+						className="hero-image"
+					/>
 				</div>
 			</div>
 		</div>
