@@ -2,6 +2,15 @@ import React, { useState, useEffect, useContext } from "react";
 import abejaReina from "../../img/3d1b49_7435d53d778a48a6886c37508aa6bf63_mv2-1.gif";
 
 export const Test = () => {
+	const [resolve, setResolve] = useState("");
+	const resultado = e => {
+		console.log(e);
+		if (e == "true") {
+			setResolve("Vaya lo has logrado!!");
+		} else {
+			setResolve("Lo siento pero no es correcto!!");
+		}
+	};
 	return (
 		<header id="hero" className="hero-2">
 			<div className="flex-container-2 w-container">
@@ -16,10 +25,11 @@ export const Test = () => {
 									data-name="Radio"
 									id="radio"
 									name="radio"
-									value="Radio"
+									value="true"
 									className="w-form-formradioinput w-radio-input"
+									onClick={e => resultado(e.target.value)}
 								/>
-								<span className="w-form-label">Radio</span>
+								<span className="w-form-label">La alimentacion de los humanos depende de ellas.</span>
 							</label>
 							<label className="radio-button-field w-radio">
 								<input
@@ -27,10 +37,11 @@ export const Test = () => {
 									data-name="Radio 4"
 									id="radio-4"
 									name="radio"
-									value="Radio"
+									value="false"
 									className="w-form-formradioinput w-radio-input"
+									onClick={e => resultado(e.target.value)}
 								/>
-								<span className="w-form-label">Radio</span>
+								<span className="w-form-label">Vuelan muy rapido.</span>
 							</label>
 							<label className="radio-button-field w-radio">
 								<input
@@ -38,10 +49,11 @@ export const Test = () => {
 									data-name="Radio 3"
 									id="radio-3"
 									name="radio"
-									value="Radio"
+									value="false"
 									className="w-form-formradioinput w-radio-input"
+									onClick={e => resultado(e.target.value)}
 								/>
-								<span className="w-form-label">Radio</span>
+								<span className="w-form-label">Son animales muy amigables.</span>
 							</label>
 							<label className="radio-button-field w-radio">
 								<input
@@ -49,26 +61,23 @@ export const Test = () => {
 									data-name="Radio 2"
 									id="radio-2"
 									name="radio"
-									value="Radio"
+									value="false"
 									className="w-form-formradioinput w-radio-input"
+									onClick={e => resultado(e.target.value)}
 								/>
-								<span className="w-form-label">Radio</span>
+								<span className="w-form-label">
+									La miel es muy nutritiva e importante para los seres vivos.
+								</span>
 							</label>
 						</form>
-						<div className="w-form-done">
-							<div>Thank you! Your submission has been received!</div>
-						</div>
-						<div className="w-form-fail">
-							<div>Oops! Something went wrong while submitting the form.</div>
-						</div>
 					</div>
-					<a href="#" className="w-button">
-						Button text
-					</a>
 				</div>
 				<div className="hero-image-mask-2">
 					<img src={abejaReina} alt="" className="hero-image-2" />
 				</div>
+			</div>
+			<div className="flex-container resolve">
+				<h3>{resolve}</h3>
 			</div>
 		</header>
 	);

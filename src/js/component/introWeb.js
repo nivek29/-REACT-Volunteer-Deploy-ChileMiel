@@ -1,4 +1,5 @@
-import React, { Component } from "react";
+import React, { useState, useEffect, useContext } from "react";
+import { Context } from "../store/appContext";
 import abejaSide from "../../img/malcolm-lightbody-NfDKLoNbXDk-unsplash.jpg";
 import abejaSide500 from "../../img/malcolm-lightbody-NfDKLoNbXDk-unsplash-p-500.jpeg";
 import abejaSide800 from "../../img/malcolm-lightbody-NfDKLoNbXDk-unsplash-p-800.jpeg";

@@ -21,18 +21,22 @@ export const Navbar = () => {
 						</a>
 					</li>
 					<li>
-						<a href="#" className="nav-link">
-							Features
-						</a>
+						<Link to={"/"}>
+							<a href="#" className="nav-link">
+								Sections
+							</a>
+						</Link>
 					</li>
 					<li>
-						<a href="#" className="nav-link">
-							Pricing
-						</a>
+						<Link to={"/onePage"}>
+							<a href="#" className="nav-link">
+								One Page
+							</a>
+						</Link>
 					</li>
 					<li>
-						<a href="#" className="nav-link">
-							Pricing
+						<a href="https://chilemiel.cl/" className="nav-link">
+							Chile Miel
 						</a>
 					</li>
 				</ul>

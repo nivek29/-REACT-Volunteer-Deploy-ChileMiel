@@ -22,19 +22,20 @@ export const Home = () => {
 				<div className="container">
 					<div className=" btns">
 						<Button
-							className="btn-atras"
+							className="btn-atras-hidden"
 							variant="secondary"
 							onClick={() => {
 								cambiarPagina(-1);
 							}}>
-							Secondary
+							Atrás
 						</Button>
 						<Button
+							className="btn-forward"
 							variant="secondary"
 							onClick={() => {
 								cambiarPagina(1);
 							}}>
-							Secondary
+							Continuar
 						</Button>
 					</div>
 				</div>
@@ -48,18 +49,20 @@ export const Home = () => {
 				<div className="container">
 					<div className=" btns">
 						<Button
+							className="btn-atras"
 							variant="secondary"
 							onClick={() => {
 								cambiarPagina(-1);
 							}}>
-							Secondary
+							Atrás
 						</Button>
 						<Button
+							className="btn-forward"
 							variant="secondary"
 							onClick={() => {
 								cambiarPagina(1);
 							}}>
-							Secondary
+							Continuar
 						</Button>
 					</div>
 				</div>
@@ -73,18 +76,20 @@ export const Home = () => {
 				<div className="container">
 					<div className=" btns">
 						<Button
+							className="btn-atras"
 							variant="secondary"
 							onClick={() => {
 								cambiarPagina(-1);
 							}}>
-							Secondary
+							Atrás
 						</Button>
 						<Button
+							className="btn-forward"
 							variant="secondary"
 							onClick={() => {
 								cambiarPagina(1);
 							}}>
-							Secondary
+							Continuar
 						</Button>
 					</div>
 				</div>
@@ -98,18 +103,20 @@ export const Home = () => {
 				<div className="container">
 					<div className=" btns">
 						<Button
+							className="btn-atras"
 							variant="secondary"
 							onClick={() => {
 								cambiarPagina(-1);
 							}}>
-							Secondary
+							Atrás
 						</Button>
 						<Button
+							className="btn-forward-hidden"
 							variant="secondary"
 							onClick={() => {
 								cambiarPagina(1);
 							}}>
-							Secondary
+							Continuar
 						</Button>
 					</div>
 				</div>

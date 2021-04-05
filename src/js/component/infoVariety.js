@@ -1,4 +1,5 @@
 import React, { useState, useEffect, useContext } from "react";
+import { Context } from "../store/appContext";
 import imgConsumo from "../../img/cannabox-tt6ij0tffLc-unsplash.jpg";
 import imgConsumo500 from "../../img/cannabox-tt6ij0tffLc-unsplash-p-500.jpeg";
 import imgConsumo800 from "../../img/cannabox-tt6ij0tffLc-unsplash-p-800.jpeg";
@@ -30,10 +31,7 @@ export const InfoVariety = () => {
 	return (
 		<section id="cards-section" className="cards-section-2">
 			<div className="centered-container-3 w-container">
-				<h2 className="heading-3">
-					Solamente siete, de las más de 20,000 especies de abejas, producen miel. Aproximadamente 1.6
-					millones de toneladas de miel cada año.
-				</h2>
+				<h2 className="heading-3" />
 				<div className="cards-grid-container-2">
 					<div id="w-node-_4ad01d63-b245-3c4c-81b8-05f2055e4d96-25d1f98c">
 						<div className="cards-image-mask">
