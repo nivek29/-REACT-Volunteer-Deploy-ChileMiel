@@ -9,7 +9,7 @@ export const Navbar = () => {
 			<nav className="w-container">
 				<ul role="list" className="nav-grid w-list-unstyled">
 					<li id="w-node-f5d47d04-f829-de5d-2f85-b32dc1412e3e-ce20afa7">
-						<a href="#" className="nav-logo-link">
+						<a href="/" className="nav-logo-link">
 							{" "}
 							<img
 								src={logo}

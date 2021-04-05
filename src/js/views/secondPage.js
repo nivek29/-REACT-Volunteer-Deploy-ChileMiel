@@ -7,7 +7,10 @@ export const SecondPage = () => {
 	return (
 		<Fragment>
 			<IntroWeb />
-			<Curiosity />
+			<div className="border-top border-bottom">
+				<Curiosity />
+			</div>
+
 			<InfoVariety />
 			<Test />
 		</Fragment>
